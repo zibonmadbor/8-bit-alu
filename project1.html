@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8-Bit ALU Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="alu-container">
+        <h1>8-Bit ALU Simulator</h1>
+        
+        <div class="input-group">
+            <label>Input A (Binary):</label>
+            <input type="text" id="inputA" maxlength="8" pattern="[01]{8}">
+            <small id="decimalA">Decimal: 0</small>
+        </div>
+        
+        <div class="input-group">
+            <label>Input B (Binary):</label>
+            <input type="text" id="inputB" maxlength="8" pattern="[01]{8}">
+            <small id="decimalB">Decimal: 0</small>
+        </div>
+        
+        <div class="input-group">
+            <label>Operation:</label>
+            <select id="operation">
+                <option value="add">Addition (+)</option>
+                <option value="and">Bitwise AND (&)</option>
+                <option value="or">Bitwise OR (|)</option>
+                <option value="xor">Bitwise XOR (^)</option>
+                <option value="shift-left">Left Shift (<<)</option>
+                <option value="shift-right">Right Shift (>>)</option>
+                <option value="not-a">NOT A (~A)</option>
+            </select>
+        </div>
+        
+        <div>
+            <button class="btn" id="calculateBtn">Calculate</button>
+            <button class="btn btn-simulate" id="simulateBtn">Show Simulation</button>
+        </div>
+        
+        <div class="result-box" id="resultBox">
+            <h3>Result:</h3>
+            <div>Binary: <span id="resultBinary">00000000</span></div>
+            <div>Decimal: <span id="resultDecimal">0</span></div>
+        </div>
+        
+        <div id="simulationSteps" class="simulation-steps" style="display:none;">
+            <h3>Simulation Steps</h3>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.alu-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.btn-simulate {
+    background-color: #2196F3;
+}
+.result-box {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+.simulation-steps {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+}
+.simulation-step {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
