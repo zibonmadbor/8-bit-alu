@@ -116,17 +116,15 @@ function simulateNOT(inputA) {
 // Event Listeners
 document.getElementById('inputA').addEventListener('input', function (e) {
     let value = e.target.value;
-    // Keep only the valid binary characters
     value = value.replace(/[^01]/g, '');
-    e.target.value = value; // Set the filtered value back
+    e.target.value = value; 
     document.getElementById('decimalA').textContent = `Decimal: ${binaryToDecimal(value.padStart(8, '0'))}`;
 });
 
 document.getElementById('inputB').addEventListener('input', function (e) {
     let value = e.target.value;
-    // Keep only the valid binary characters
     value = value.replace(/[^01]/g, '');
-    e.target.value = value; // Set the filtered value back
+    e.target.value = value; 
     document.getElementById('decimalB').textContent = `Decimal: ${binaryToDecimal(value.padStart(8, '0'))}`;
 });
 
